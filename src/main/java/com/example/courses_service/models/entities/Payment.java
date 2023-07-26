@@ -1,4 +1,4 @@
-package com.example.courses_service.models;
+package com.example.courses_service.models.entities;
 
 import com.example.courses_service.models.enums.PaymentStatus;
 import jakarta.persistence.*;
