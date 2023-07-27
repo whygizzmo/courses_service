@@ -1,7 +1,7 @@
 package com.example.courses_service.services.impl;
 
 import com.example.courses_service.mappers.LanguageMapper;
-import com.example.courses_service.models.LanguageDto;
+import com.example.courses_service.models.dtos.LanguageDto;
 import com.example.courses_service.models.entities.Language;
 import com.example.courses_service.repos.LanguageRepository;
 import com.example.courses_service.services.LanguageService;

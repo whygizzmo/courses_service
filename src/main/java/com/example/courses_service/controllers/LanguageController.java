@@ -1,6 +1,6 @@
 package com.example.courses_service.controllers;
 
-import com.example.courses_service.models.LanguageDto;
+import com.example.courses_service.models.dtos.LanguageDto;
 import com.example.courses_service.models.entities.Language;
 import com.example.courses_service.services.LanguageService;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,4 +1,4 @@
-package com.example.courses_service.models;
+package com.example.courses_service.models.dtos;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;

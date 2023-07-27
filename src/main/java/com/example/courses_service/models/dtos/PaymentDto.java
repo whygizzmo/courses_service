@@ -1,25 +1,25 @@
-package com.example.courses_service.models.entities;
+package com.example.courses_service.models.dtos;
 
+import com.example.courses_service.models.entities.Course;
+import com.example.courses_service.models.entities.Student;
 import com.example.courses_service.models.enums.PaymentStatus;
-import jakarta.persistence.*;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToOne;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.util.Date;
 
-@Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Payment {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class PaymentDto {
     Long id;
-    @OneToOne
     Student student;
-    @ManyToOne
     Course course;
     double paid;
     double price;
@@ -27,7 +27,4 @@ public class Payment {
     Date date;
     @Enumerated(value = EnumType.STRING)
     PaymentStatus paymentStatus;
-
 }
-
-
