@@ -27,5 +27,5 @@ public class Course {
     @CreationTimestamp
     Date startDate;
     Date endDate;
-
 }
+
